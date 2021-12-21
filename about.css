@@ -1,0 +1,88 @@
+/* our Story */
+ .ourStory__wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+} 
+
+.ourStory__title,
+.goalStory__title
+{
+	font-size: 1.8rem;
+	font-weight: 600;
+	color: var(--black-1);
+	margin-bottom: 1rem;
+   
+}
+.ourStory__subtitle {
+	font-size: 1.4rem;
+	font-weight: 600;
+	color: var(--black-1);
+	margin-bottom: 2rem;
+}
+.ourStory__text,
+.goalStory__text{
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: var(--black-2);
+}
+@media only screen and (min-width: 768px) {
+   
+     .ourStory__wrapper {
+     flex-direction: row; 
+     display: flex;
+    gap: 3rem;
+    align-items: center;
+}  
+
+     .ourStory__img,
+    .ourStory__info{
+        flex: 1;
+    } 
+     .ourStory__title,
+     .goalStory__title{
+        font-size: 3.6rem;
+    } 
+    .ourStory__subtitle{
+        font-size: 1.8rem;
+    }
+    .ourStory__text,
+    .goalStory__text{
+        font-size: 1.8rem;
+        max-width: 800px;
+        line-height: 2.2rem;
+    }
+    
+}
+/* mục tiêu */
+.goalStory__info{
+    text-align: left;
+    margin-bottom: 5rem;
+}
+.goalStory__img__wrapper img{
+
+    object-fit: cover;
+}
+.goalStory__img__wrapper{
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap:2rem
+}
+.goalStory__img1{
+    grid-row: 1/3;
+}
+@media only screen and (min-width:768px) {
+    .goalStory__info{
+        text-align: center;
+    }
+    .goalStory__img__wrapper{
+        gap:2rem;
+    }
+    .goalStory__text{
+        margin: 0 auto;
+    }
+    
+}
